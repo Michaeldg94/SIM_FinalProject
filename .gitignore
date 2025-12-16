@@ -1,6 +1,6 @@
 # Data (too large for git)
-*.csv
-*.csv.gz
+data/*.csv
+data/*.csv.gz
 
 # Python
 __pycache__/

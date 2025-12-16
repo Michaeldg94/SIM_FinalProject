@@ -1,0 +1,70 @@
+{
+  "analysis_params": {
+    "gamma": 1.0,
+    "n_alpha_values": 10,
+    "alpha_range": [
+      0.0001,
+      1.0
+    ],
+    "recurrence_threshold": 0.8
+  },
+  "summary": {
+    "total_unique_features_selected": 35,
+    "total_features_available": 36,
+    "highly_recurrent_features_count": 8
+  },
+  "highly_recurrent_features": [
+    {
+      "feature": "LOG_PETROR50_R",
+      "appearances": 10,
+      "frequency": 1.0
+    },
+    {
+      "feature": "PETROMAG_MG",
+      "appearances": 9,
+      "frequency": 0.9
+    },
+    {
+      "feature": "PETROMAG_G_corr",
+      "appearances": 9,
+      "frequency": 0.9
+    },
+    {
+      "feature": "PETROMAG_R_corr",
+      "appearances": 9,
+      "frequency": 0.9
+    },
+    {
+      "feature": "LOG_PETROMAGERR_Z",
+      "appearances": 8,
+      "frequency": 0.8
+    },
+    {
+      "feature": "LOG_PETROR90_R",
+      "appearances": 8,
+      "frequency": 0.8
+    },
+    {
+      "feature": "LOG_PETROMAGERR_G",
+      "appearances": 8,
+      "frequency": 0.8
+    },
+    {
+      "feature": "LOG_CMODELMAGERR_R",
+      "appearances": 8,
+      "frequency": 0.8
+    }
+  ],
+  "frequency_distribution": {
+    "10": 1,
+    "9": 3,
+    "8": 4,
+    "7": 7,
+    "6": 3,
+    "5": 4,
+    "4": 3,
+    "3": 7,
+    "2": 1,
+    "1": 2
+  }
+}
