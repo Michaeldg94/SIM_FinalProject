@@ -74,7 +74,7 @@ Learns 16-dimensional latent representations directly from 128×128 galaxy image
 
 ---
 
-### 04_BMoG — Bayesian Gaussian Mixture Model
+### 04_BMoG — Bayesian Mixture of Gaussians
 
 `Galaxy_Zoo_Bayesian_GMM.ipynb`
 
