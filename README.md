@@ -81,6 +81,7 @@ Learns 16-dimensional latent representations directly from 128×128 galaxy image
 Clusters galaxies in the VAE latent space using Gibbs sampling with conjugate priors (Normal-Inverse-Wishart). Discovers natural groupings without using Galaxy Zoo labels during training. Labels are only used afterward to validate cluster meaning.
 
 **Key results**: BIC selects $K=4$ clusters. Validation reveals that these clusters do not correspond to human morphological classifications (ARI = 0.003, NMI = 0.001). The VAE latent space appears to encode visual features distinct from the smooth vs. disk distinction used by Galaxy Zoo volunteers.
+
 ---
 
 ## Quick Reference (TO BE COMPLETED)
