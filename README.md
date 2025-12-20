@@ -46,8 +46,6 @@ SMI_FinalProject/
 
 ### 01_Baseline — Regularized Regression
 
-`Galaxy_Zoo_BaselineAnalysis_LASSO.ipynb`
-
 Predicts P(smooth) using tabular astronomical features. Compares OLS, Ridge, Lasso, and Adaptive Lasso with logit-transformed targets. Identifies the most important features through coefficient analysis across regularization strengths.
 
 **Key results:** $R^2\approx 0.33$ are similar between different regularization methods, suggesting the existence of non-linear relationships.
@@ -55,8 +53,6 @@ Predicts P(smooth) using tabular astronomical features. Compares OLS, Ridge, Las
 ---
 
 ### 02_GAM — Generalized Additive Models
-
-`ToBeCompleted.ipynb`
 
 Extends the baseline with spline-based transformations to capture non-linear feature effects. Uses `SplineTransformer` + `LinearGAM` from `pygam` after feature selection via Lasso/Ridge/Adaptive Lasso.
 
@@ -66,8 +62,6 @@ Extends the baseline with spline-based transformations to capture non-linear fea
 
 ### 03_VAE — Variational Autoencoder
 
-`ToBeCompleted.ipynb`
-
 Learns 16-dimensional latent representations directly from 128×128 galaxy images. A convolutional encoder-decoder architecture trained with reconstruction + KL loss. No hand-crafted features required.
 
 **Key results**: Clean separation between smooth and disk galaxies in latent space (visualized via t-SNE). Outputs feed directly into Stage 2 clustering (aka `04_BMoG/` folder).
@@ -76,19 +70,6 @@ Learns 16-dimensional latent representations directly from 128×128 galaxy image
 
 ### 04_BMoG — Bayesian Mixture of Gaussians
 
-`Galaxy_Zoo_Bayesian_GMM.ipynb`
-
 Clusters galaxies in the VAE latent space using Gibbs sampling with conjugate priors (Normal-Inverse-Wishart). Discovers natural groupings without using Galaxy Zoo labels during training. Labels are only used afterward to validate cluster meaning.
 
 **Key results**: BIC selects $K=4$ clusters. Validation reveals that these clusters do not correspond to human morphological classifications (ARI = 0.003, NMI = 0.001). The VAE latent space appears to encode visual features distinct from the smooth vs. disk distinction used by Galaxy Zoo volunteers.
-
----
-
-## Quick Reference (TO BE COMPLETED)
-
-| Component | Notebook | Key Output |
-|-----------|----------|------------|
-| Baseline | `01_Baseline/Galaxy_Zoo_BaselineAnalysis_LASSO.ipynb` | Feature importance |
-| GAM | `02_GAM/*.ipynb` | Non-linear partial effects |
-| VAE | `03_VAE/*.ipynb` | Latent Representations |
-| Bayesian GMM | `04_BMoG/Galaxy_Zoo_Bayesian_GMM.ipynb` | Natural Morphological Groupings |
